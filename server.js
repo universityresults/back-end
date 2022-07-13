@@ -17,6 +17,7 @@ const globalError = require("./middlewares/errorMiddlewares");
 
 const app = express();
 
+// allows to access routes
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
   res.setHeader("Access-Control-Allow-Methods", "OPTIONS, GET, POST, PUT, PATCH, DELETE");
